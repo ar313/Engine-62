@@ -26,6 +26,7 @@ class Game : public Engine::Application
 public: 
 	Game() {
 		PushLayer(new ExampleLayer());
+		PushOverlay(new Engine::ImGuiLayer());
 	}
 
 	~Game() {
